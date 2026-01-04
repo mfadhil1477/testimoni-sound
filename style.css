@@ -1,0 +1,145 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #0d6efd;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.search {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.search input {
+  width: 80%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.hadis-card {
+  background: #fff;
+  border-radius: 12px;
+  margin: 16px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hadis-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.lafaz {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.terjemah {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.summary {
+  background: #e2e8f0;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.actions {
+  margin-top: 12px;
+}
+
+.actions button {
+  padding: 8px 12px;
+  margin-right: 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-audio {
+  background: #0d6efd;
+  color: white;
+}
+
+.btn-analisis {
+  background: #6c757d;
+  color: white;
+}
+
+.wave-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 40px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.wave {
+  width: 6px;
+  background: #0d6efd;
+  animation: waveAnim 1s infinite ease-in-out;
+  animation-play-state: paused;
+  border-radius: 3px;
+}
+
+.wave:nth-child(1) { animation-delay: 0s; }
+.wave:nth-child(2) { animation-delay: 0.1s; }
+.wave:nth-child(3) { animation-delay: 0.2s; }
+.wave:nth-child(4) { animation-delay: 0.3s; }
+.wave:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes waveAnim {
+  0%, 100% { height: 10px; }
+  50% { height: 40px; }
+}
+
+.accordion {
+  margin-top: 10px;
+}
+
+.accordion button {
+  background: #e2e8f0;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.accordion button.active {
+  background: #0d6efd;
+  color: white;
+}
+
+.panel {
+  padding: 0 10px;
+  display: none;
+  background-color: #f9f9f9;
+  border-left: 3px solid #0d6efd;
+  border-radius: 0 0 6px 6px;
+  margin-bottom: 10px;
+}
